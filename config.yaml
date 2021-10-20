@@ -84,12 +84,13 @@ params:
       - image: me.jpg
         subtitle: JoonYoung Park
         title: About Me
-        url: blogs/aliquam
+        url: blogs/me
         
       - image: airbnb.jpg
         subtitle: Airbnb Projection on Thailand
         title: LBS Group Project
         url: blogs/airbnb
+        
       - image: lbs.jpg
         subtitle: CV
         title: Resume

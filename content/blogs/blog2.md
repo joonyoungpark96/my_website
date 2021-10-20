@@ -8,8 +8,8 @@ draft: false
 image: airbnb.jpg # save picture in \static\img\blogs. Acceptable formats= jpg, jpeg, or png . Your iPhone pics wont work
 
 keywords: ""
-slug: airbnb1 # slug is the shorthand URL address... no spaces plz
-title: AirBnb Cost Project on Thailand
+slug: airbnb # slug is the shorthand URL address... no spaces plz
+title: airbnb
 ---
   
 

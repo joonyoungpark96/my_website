@@ -7,7 +7,7 @@ description: Short Description of myself
 draft: false
 image: me.jpg
 keywords: ""
-slug: aliquam
+slug: me
 title: About Me
 ---
 # Justin Park

@@ -1,4 +1,5 @@
-baseURL: http://example.org/
+baseURL: https://joonyoung-portfolio.netlify.app/
+
 languageCode: en-us
 title: Portfolio for Justin Park
 theme: forty

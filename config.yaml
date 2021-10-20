@@ -81,7 +81,7 @@ params:
   tiles: 
     enable: yes
     showcase:
-      - image: lbs.jpg
+      - image: me.jpg
         subtitle: JoonYoung Park
         title: About Me
         url: blogs/aliquam
@@ -90,7 +90,7 @@ params:
         subtitle: Airbnb Projection on Thailand
         title: LBS Group Project
         url: blogs/airbnb
-      - image: 
+      - image: lbs.jpg
         subtitle: CV
         title: Resume
         url: '/files/JoonYoung_Park_CV.pdf'

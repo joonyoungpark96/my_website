@@ -89,8 +89,7 @@ params:
       - image: lbs.jpg
         subtitle: Airbnb Projection on Thailand
         title: LBS Group Project
-        url: blogs/airbnb
-        
+        url: blogs/Group_Assignment_A1_For-Submission
       - image: 
         subtitle: CV
         title: Resume

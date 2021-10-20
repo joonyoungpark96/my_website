@@ -10,7 +10,7 @@ params:
     buttonText: Get Started
     subtitle: |-
       AN ENTHUSTIATIC KOREAN STUDYING FINANCIAL ANALYSIS AT LONDON BUSINESS SCHOOL.
-    title: Portfolio for JoonYoung Park
+    title: Portfolio for JoonYoung (Justin) Park
   blog: {}
   contact:
     address:
@@ -35,7 +35,7 @@ params:
     text: Please visit [this page](/)
   favicon: favicon.ico
   footer:
-    copyright: Company Name
+    copyright: JoonYoung Park
     enable: yes
     quicklinks:
       - alt: HTML5 UP
@@ -76,8 +76,8 @@ params:
       - name: Elements
         url: elements.html
     menu: Menu
-    subtitle: By HTML5 Up
-    title: Forty
+    subtitle: By Justin Park
+    title: My Portfolio
   tiles: 
     enable: yes
     showcase:
@@ -86,13 +86,13 @@ params:
         title: About Me
         url: blogs/aliquam
       - image: pic02.jpg
-        subtitle: Feugiat Amet Tempus
-        title: Risk Return of DJIA Industrial Average
+        subtitle: Airbnb Project on Stay in Thailand
+        title: LBS Group Project
         url: blogs/risk_return
       - image: pic03.jpg
         subtitle: Lorem Etiam Nullam
         title: Magna
-        url: blogs/magna
+        url: '/files/JoonYoung_Park_CV.pdf'
       - image: pic04.jpg
         subtitle: Nisl Sed Aliquam
         title: Ipsum

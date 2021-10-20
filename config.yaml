@@ -82,7 +82,7 @@ params:
     enable: yes
     showcase:
       - image: me.jpg
-        subtitle: JoonYoung Park
+        subtitle: Justin Park
         title: About Me
         url: blogs/me
         

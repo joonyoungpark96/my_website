@@ -1,7 +1,7 @@
 baseURL: https://joonyoung-portfolio.netlify.app/
 
 languageCode: en-us
-title: Portfolio for Justin Park
+title: Portfolio for JoonYoung Park
 theme: forty
 googleAnalytics: ''
 disqusShortname: ''
@@ -9,15 +9,14 @@ params:
   banner:
     buttonText: Get Started
     subtitle: |-
-      A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP
-      AND RELEASED UNDER THE CREATIVE COMMONS.
-    title: Hi, my name is Justin Park
+      AN ENTHUSTIATIC KOREAN STUDYING FINANCIAL ANALYSIS AT LONDON BUSINESS SCHOOL.
+    title: Portfolio for JoonYoung Park
   blog: {}
   contact:
     address:
       - city: London
         country: United Kingdom
-        street: Street
+        street: Maida Vale
         title: Address
     buttonClear: Clear
     buttonSend: Send message
@@ -26,7 +25,7 @@ params:
         title: Email
     enable: yes
     phone:
-      - phone: (000) 000-0000 x1234
+      - phone: (44) 07400 070075
         title: Phone
   custom_css: []
   custom_js: []
@@ -79,17 +78,17 @@ params:
     menu: Menu
     subtitle: By HTML5 Up
     title: Forty
-  tiles:
+  tiles: 
     enable: yes
     showcase:
-      - image: pic01.jpg
-        subtitle: Ipsum Dolor Sit Amet
-        title: Aliquam
+      - image: lbs.jpg
+        subtitle: JoonYoung Park
+        title: About Me
         url: blogs/aliquam
       - image: pic02.jpg
         subtitle: Feugiat Amet Tempus
-        title: Tempus
-        url: blogs/tempus
+        title: Risk Return of DJIA Industrial Average
+        url: blogs/risk_return
       - image: pic03.jpg
         subtitle: Lorem Etiam Nullam
         title: Magna

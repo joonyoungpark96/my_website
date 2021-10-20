@@ -71,10 +71,10 @@ params:
         url: '#'
       - name: Blogs
         url: blogs
-      - name: Generic Blog
-        url: blogs/ipsum
-      - name: Elements
-        url: elements.html
+      #- name: Generic Blog
+        #url: blogs/ipsum
+      #- name: Elements
+       # url: elements.html
     menu: Menu
     subtitle: By Justin Park
     title: My Portfolio
@@ -86,10 +86,10 @@ params:
         title: About Me
         url: blogs/aliquam
         
-      - image: lbs.jpg
+      - image: airbnb.jpg
         subtitle: Airbnb Projection on Thailand
         title: LBS Group Project
-        url: blogs/Group_Assignment_A1_For-Submission
+        url: blogs/blog2
       - image: 
         subtitle: CV
         title: Resume

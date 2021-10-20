@@ -12,19 +12,19 @@ slug: risk_return # slug is the shorthand URL address... no spaces plz
 title: Risk-Return of DJIA stocks
 ---
 
-<script src="Group_Assignment_A1_For Submission_files/htmlwidgets/htmlwidgets.js"></script>
-<script src="Group_Assignment_A1_For Submission_files/jquery/jquery.min.js"></script>
-<link href="Group_Assignment_A1_For Submission_files/leaflet/leaflet.css" rel="stylesheet" />
-<script src="Group_Assignment_A1_For Submission_files/leaflet/leaflet.js"></script>
-<link href="Group_Assignment_A1_For Submission_files/leafletfix/leafletfix.css" rel="stylesheet" />
-<script src="Group_Assignment_A1_For Submission_files/proj4/proj4.min.js"></script>
-<script src="Group_Assignment_A1_For Submission_files/Proj4Leaflet/proj4leaflet.js"></script>
-<link href="Group_Assignment_A1_For Submission_files/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
-<script src="Group_Assignment_A1_For Submission_files/leaflet-binding/leaflet.js"></script>
-<script src="Group_Assignment_A1_For Submission_files/leaflet-providers/leaflet-providers_1.9.0.js"></script>
-<script src="Group_Assignment_A1_For Submission_files/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
-<script src="Group_Assignment_A1_For Submission_files/kePrint/kePrint.js"></script>
-<link href="Group_Assignment_A1_For Submission_files/lightable/lightable.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/proj4/proj4.min.js"></script>
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+<script src="/rmarkdown-libs/leaflet-providers/leaflet-providers_1.9.0.js"></script>
+<script src="/rmarkdown-libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 
 
 <pre class="r"><code># load the library for Economist Theme
@@ -2533,28 +2533,28 @@ ggplot(listings)+
   labs(title=&quot;No of Bed Density Plot&quot;)+ 
   theme_economist() +
   scale_colour_economist()</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-3-1.png" width="2100" /></p>
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-3-1.png" width="2100" /></p>
 <pre class="r"><code>#No of accommodates
 ggplot(listings)+ 
   geom_density(aes(x=accommodates))+
   labs(title=&quot;Accomodates density Plot&quot;)+ 
   theme_economist() +
   scale_colour_economist()</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-3-2.png" width="2100" /></p>
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-3-2.png" width="2100" /></p>
 <pre class="r"><code># Review Score Rating density plot 
 ggplot(listings)+ 
   geom_density(aes(x=review_scores_rating))+
   labs(title=&quot;Review_score_rating Density Plot&quot;)+ 
   theme_economist() +
   scale_colour_economist()</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-3-3.png" width="2100" /></p>
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-3-3.png" width="2100" /></p>
 <pre class="r"><code># Number of Review plot 
 ggplot(listings)+ 
   geom_density(aes(x=number_of_reviews))+
   labs(title=&quot;Number_of_reviews Density Plot&quot;)+ 
   theme_economist() +
   scale_colour_economist()</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-3-4.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-3-4.png" width="2100" />
 &gt; In most of the density plot we can see that there are many outliers which we need to remove so that it would not impact our regression price equation. Start with the number of bed we can see that majority of hte data have lower than 10 beds. For the number of accmodates data lie between 2 and 5 people. While most of hte property has high reveiw rating scores.The number of reviews also has a large amount of outlier as well.</p>
 <pre class="r"><code># Create the favstats for the numerical column in the listings dataframe 
 favstats(~beds, data= listings) </code></pre>
@@ -3052,7 +3052,7 @@ ggplot(data_visualisation,aes(x=price))+
        y=&quot;count&quot;)+ 
   theme_economist() +
   scale_colour_economist()</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-8-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-8-1.png" width="2100" />
 &gt; The first thing we wanted to do was to plot the price distributions. Here, it is almost impossible to see if the prices follow a normal distrubtion. We need to compute the log-prices. Please see below our code.</p>
 <pre class="r"><code># plot the log price distribution 
 
@@ -3063,7 +3063,7 @@ ggplot(data_visualisation,aes(x=log_price))+
        y=&quot;count&quot;)+
   theme_economist() +
   scale_colour_economist()</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-9-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-9-1.png" width="2100" />
 &gt; The distribution is closer than a normal distribution but we still need to test it.</p>
 <pre class="r"><code># Check whether price /log_price is normal distribution 
 library(tseries)
@@ -3113,13 +3113,13 @@ ggpairs(matrix(aes(alpha=0.6,size=3,corSize=3)),title=&quot;Correlogram of price
     panel.grid.minor = element_blank(),
     panel.background = element_rect(fill = &quot;grey95&quot;,)
   )</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-11-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-11-1.png" width="2100" />
 &gt; As there are many x variables of interest in the plot, we decide to plot the corrplot to better visualize the data.</p>
 <pre class="r"><code># Create the correlation table in color to see the effect of correlation of each variable relationship
 library (corrplot)
 corrplot(cor_table, method = &quot;color&quot;)+
     theme(text = element_text(size=2))</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-12-1.png" width="2100" /></p>
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-12-1.png" width="2100" /></p>
 <pre><code>NULL</code></pre>
 <blockquote>
 <p>We can already observe some results. Indeed, we first see that prices are very correlated with accomodates, and indeed the number of accomodates should exert upward pressure on prices. We also see that room type is negatively correlated with prices. It makes sense as we ranked our data from private room to share rooms, so if we have larger numbers for share rooms it should indeed decrease the price. City_Center is not as correlated to prices as we could have thought but it still positively correlated. We will test the significance of the model later on.</p>
@@ -5770,7 +5770,7 @@ ggplot(data_visualisation,aes(x=near_BTS_MRT,y=log_price))+
   theme_economist()+
   labs(title=&quot;Box plot of accomodation near or not near BTS_MRT&quot;,
        caption=&quot;0 mean not near BTS_MRT and 1 mean near BTS_MRT&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-14-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-14-1.png" width="2100" />
 &gt; It is very diffuclt to see if the near_BTS_MRT has an impact on prices. We can see it is slighly higher but the difference is almost nul. Our first intuition was that to be near public transportations would have exerted upward pressure on prices, as it is more convenient then to access the whole city. But when we look at the results, we see the difference is very small so it does not have a big impact on prices, as we previously thought.</p>
 </div>
 <div id="air-conditioner" class="section level4">
@@ -5784,7 +5784,7 @@ ggplot(data_visualisation,aes(x=has_airconditioner,y=log_price))+
   theme_economist()+
   labs(title=&quot;Box plot of accomodation have or not have air con&quot;,
        caption=&quot;0 mean no air con and 1 mean have air con&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-15-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-15-1.png" width="2100" />
 &gt; Here again, we see that aircon has a small impact on prices. Our intuition was that since air conditionner is very important in Thailand, it should have had a bigger impact on prices. But actually, we also noticed that 90% of the data has airconditionner so that it is why it does not change too much the average price.</p>
 </div>
 <div id="city-center" class="section level4">
@@ -5798,7 +5798,7 @@ ggplot(data_visualisation,aes(x=city_center,y=log_price))+
   theme_economist()+
   labs(title=&quot;Box plot of accomodation in city center or not&quot;,
        caption=&quot;0 = not city center and 1= city center&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-16-1.png" width="2100" /></p>
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-16-1.png" width="2100" /></p>
 <blockquote>
 <p>We also thought that properties near the city center would increase prices. Here,we a slight upward trend on prices but not that sizeable. It is mainly due to the fact that there are a lot of outliers in the dataset. We will clean it for the regression.</p>
 </blockquote>
@@ -5818,7 +5818,7 @@ ggplot(data_visualisation,aes(x=host_is_superhost,y=log_price))+
   theme_economist()+
   labs(title=&quot;Box plot of accomodation host is superhost or not&quot;,
        caption=&quot;0 = not superhost and 1= superhostr&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-17-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-17-1.png" width="2100" />
 &gt; The superhost variable impact is almost impossible to see. It means that customers does not really pay attention to this variable when renting a property, that is why it does not change the price a lot.</p>
 </div>
 <div id="no-of-host-listing" class="section level4">
@@ -5831,7 +5831,7 @@ ggplot(data_visualisation,aes(x=host_listings_count,y=log_price))+
   xlim(0,250)+
   theme_economist()+
   labs(title=&quot;Log_price vs host property listing&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-18-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-18-1.png" width="2100" />
 &gt; Host property listings does not have an impact on prices as there is no relationship between the number of listings of a host and the prices. The host properly listings only tells us if the host is a profesionnal (renting a lot of houses) or a particulier.</p>
 </div>
 <div id="no-of-reviews-review-score-rating" class="section level4">
@@ -5845,7 +5845,7 @@ ggplot(data_visualisation,aes(x=number_of_reviews,y=log_price))+
   geom_point()+
   theme_economist()+
   labs(title=&quot;Log_price vs number of property reviews&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-19-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-19-1.png" width="2100" />
 &gt; suprisingly, it is diffult to see a clear relationship between prices and number of property reviews. Indeed, the number of property reviews does not tell us if the review is positive or negative. That is why we cannot see a real impact on prices.</p>
 <pre class="r"><code># plot scatter plot for review score rating 
 
@@ -5853,7 +5853,7 @@ ggplot(data_visualisation,aes(x=review_scores_rating,y=log_price))+
   geom_point()+
   theme_economist()+
   labs(title=&quot;Log_price vs Reviews score rating&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-20-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-20-1.png" width="2100" />
 &gt; Since the majority of review scores rating are between 4 and 5, we see that the reviews score rating has an slight positive impact on prices. Before 4, it is hard to see a clear relationship, probably due to the fact that there are less data available.</p>
 </div>
 </div>
@@ -5871,7 +5871,7 @@ ggplot(data_visualisation,aes(x=prop_type_simplified,y=log_price))+
   theme_economist()+
   labs(title=&quot;Box Plot of Property Types&quot;,
        caption=&quot;0 =Entire condomonium 1= Entire rental unit 2=other 3=Private room condo 4=private room rental unit&quot; )</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-21-1.png" width="2100" /></p>
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-21-1.png" width="2100" /></p>
 <pre class="r"><code># Dummy Variables meaning 
 # 0 : Entire condominium
 # 1 : Entire rental unit
@@ -5892,7 +5892,7 @@ ggplot(data_visualisation,aes(x=room_type,y=log_price))+
   theme_economist()+
   labs(title=&quot;Box Plot of Room Types&quot;,
        caption=&quot;0 =Entire home/apt 1= Hotel room 2=Private room 3=Shared room &quot; )</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-22-1.png" width="2100" /></p>
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-22-1.png" width="2100" /></p>
 <pre class="r"><code># Dummy Variables meaning 
 # 0 : Entire home/apt
 # 1 : Hotel room
@@ -5912,7 +5912,7 @@ ggplot(data_visualisation,aes(x=beds,y=log_price))+
   geom_smooth(method = &quot;lm&quot;)+
   theme_economist()+
   labs(title=&quot;Log_price vs no of beds&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-23-1.png" width="2100" /></p>
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-23-1.png" width="2100" /></p>
 <blockquote>
 <p>The number of beds has a direct impact on prices. The highest the number of beds, the highest the price. It makes sense as the highest the number of beds, the more people can be in the house, so the price should be higher. We really see a clear upward trend.</p>
 </blockquote>
@@ -5923,7 +5923,7 @@ ggplot(data_visualisation,aes(x=bathrooms_text,y=log_price))+
   geom_smooth(method = &quot;lm&quot;)+
   theme_economist()+
   labs(title=&quot;Log_price vs no of bathrooms&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-24-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-24-1.png" width="2100" />
 &gt; The same thing happens in bathrooms. The more bathrooms available, the more people the house can welcome. We see that the upward trend is slighly below than the one for the number of beds. Again it makes sense as people usually share the same bathroom but sleep in one bed.</p>
 </div>
 <div id="elevator" class="section level4">
@@ -5937,7 +5937,7 @@ ggplot(data_visualisation,aes(has_elevator,y=log_price))+
   theme_economist()+
   labs(title=&quot;box plot of accomodation has elevator or not&quot;,
        caption=&quot;0 = no elevator and 1=have elevator&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-25-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-25-1.png" width="2100" />
 &gt; Elevators exert a slight positive pressure on prices as well. If the airbnb is located in the last floor, an elevator would make a bigger difference on prices.</p>
 </div>
 </div>
@@ -5952,7 +5952,7 @@ ggplot(data_visualisation,aes(x=review_scores_location,y=log_price))+
   geom_smooth(method=&quot;lm&quot;)+
   theme_economist()+
   labs(title=&quot;Log_price vs review scores location&quot;)</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/unnamed-chunk-26-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-26-1.png" width="2100" />
 &gt; As we already mentionned it, since a lot of review scores location are missing, it is difficult to draw an accurate conclusion. We still see a slightly upward trend.</p>
 <pre class="r"><code># Map neighborhood 
 
@@ -6832,7 +6832,7 @@ The more variables we have in the model, the higher is the R-squared but the low
             1.154144 </code></pre>
 <pre class="r"><code>autoplot(model9)+
   theme_economist()</code></pre>
-<p><img src="/blogs/Group_Assignment_A1_For%20Submission_files/figure-html/check%20residuals-1.png" width="2100" />
+<p><img src="/blogs/blog2_files/figure-html/check%20residuals-1.png" width="2100" />
 &gt; The normal Q-Q shows us that the residual are normalized. If the residuals were not normal, the regression linearity will be challenged. Here we don’t have serious problem with normality which means our model is accurate.</p>
 <pre class="r"><code>huxreg(list(&quot;model1&quot; = model1, &quot;model2&quot; = model2, &quot;model3&quot; = model3, &quot;model4&quot; = model4,&quot;model5&quot; = model5, &quot;model6&quot; = model6, &quot;model7&quot; = model7, &quot;model8&quot; = model8,&quot;model9&quot;=model9))</code></pre>
 <table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:comparing models">

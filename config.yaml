@@ -42,9 +42,6 @@ params:
         text: 'Design: '
         url: https://www.html5up.net
     social:
-      - icon: fa-twitter
-        label: Twitter
-        url: https://www.twitter.com
       - icon: fa-facebook
         label: Facebook
         url: https://www.facebook.com/park.joonyoung.14/
@@ -53,7 +50,7 @@ params:
         url: https://www.instagram.com/justinxjoon/
       - icon: fa-github
         label: GitHub
-        url: https://www.github.com
+        url: https://github.com/joonyoungpark96
       - icon: fa-linkedin
         label: LinkedIn
         url: https://www.linkedin.com/in/joonyoungpark96/

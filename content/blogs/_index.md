@@ -1,9 +1,9 @@
 ---
 date: "2017-10-31T22:27:21-05:00"
 draft: false
-image: pic02.jpg
+image: lbs.jpg
 slug: blogs
-title: Lifestyle
+title: Blog
 ---
 
-My blogs about technology and lifestyle.
+From here, you can know more about me!

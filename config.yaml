@@ -89,7 +89,7 @@ params:
       - image: airbnb.jpg
         subtitle: Airbnb Projection on Thailand
         title: LBS Group Project
-        url: blogs/blog2
+        url: blogs/airbnb
       - image: 
         subtitle: CV
         title: Resume
@@ -99,5 +99,5 @@ params:
     buttonText: Get Started
     enable: yes
     subtitle: "Excited to learn and to experience different dynamic exposures. Please contact me via email or instagram anytime for a nice coffee chat"
-    title: Massa libero
+    title: Justin Park
     url: blogs
